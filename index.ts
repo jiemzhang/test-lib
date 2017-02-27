@@ -4,6 +4,7 @@ import {CommonModule} from '@angular/common';
 
 import { AppModule } from './src/app/app.module';
 import { ChartComponent } from './src/app/chart/chart.component';
+import { ChartService } from './src/app/shared/services/chart.service';
 
 export * from './src/app/chart/chart.component';
 
