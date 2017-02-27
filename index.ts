@@ -23,7 +23,7 @@ export class LibModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: LibModule,
-      providers: []
+      providers: [ {provide: 'ChartService', useClass: ChartService} ]
     };
   }
 }
