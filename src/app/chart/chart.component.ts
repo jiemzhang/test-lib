@@ -16,17 +16,16 @@ export class ChartComponent implements OnInit, AfterViewInit, OnDestroy  {
 
   private _chart: any;
 
-  constructor( @Inject('ChartService') private ChartService: any) {
+  constructor( ) {
 
   }
 
   ngOnInit() {
-    this.ChartService.setOptions(this.options);
   }
 
   public ngAfterViewInit(){
 
-    let opts: any = this.ChartService.getOptions();
+    let opts: any = this.options;
 
     if (this.chartEl && this.chartEl.nativeElement) {
 

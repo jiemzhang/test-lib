@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ChartComponent } from './chart/chart.component';
-import { ChartService } from './shared/services/chart.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,7 @@ import { ChartService } from './shared/services/chart.service';
     FormsModule,
     HttpModule
   ],
-  providers: [ {provide: 'ChartService', useClass: ChartService} ],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
