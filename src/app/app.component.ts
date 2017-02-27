@@ -56,5 +56,5 @@ export class AppComponent {
         y: 0.2
       }]
     }]
-  }
+  };
 }

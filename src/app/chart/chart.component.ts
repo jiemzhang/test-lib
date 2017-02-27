@@ -23,7 +23,7 @@ export class ChartComponent implements OnInit, AfterViewInit, OnDestroy  {
   ngOnInit() {
   }
 
-  public ngAfterViewInit(){
+  public ngAfterViewInit() {
 
     let opts: any = this.options;
 
@@ -32,12 +32,12 @@ export class ChartComponent implements OnInit, AfterViewInit, OnDestroy  {
       opts.chart.renderTo = this.chartEl.nativeElement;
 
       opts.series[0].point = {
-        events:{
+        events: {
           click: function () {
             console.log('clicked', this.name);
           }
         }
-      }
+      };
 
       this._chart = new Highcharts.Chart(opts);
     }
